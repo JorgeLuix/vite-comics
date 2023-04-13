@@ -1,36 +1,36 @@
 <template>
-    <header class="d-flex justify-content-center ">
+    <header class="d-flex justify-content-center justify-content-between m-3">
         <img src="../assets/img/dc-logo.png" alt="logoDc">
         <ul class="d-flex gap-4 text-uppercase align-items-center ">
             <li>
-                characters
+               <a href="">characters</a> 
             </li>
             <li>
-                comics
+               <a href="">comics</a> 
             </li>
             <li>
-                movies
+                <a href="">movies</a>
             </li>
             <li>
-                tv
+                <a href="">tv</a>
             </li>
             <li>
-                games
+                <a href="">games</a>
             </li>
             <li>
-                collectibiles
+                <a href="">collectibles</a>
             </li>
             <li>
-                videos
+                <a href="">videos</a>
             </li>
             <li>
-                fans
+                <a href="">fans</a>
             </li>
             <li>
-                news
+                <a href="">news</a>
             </li>
             <li>
-                shop
+                <a href="">shop</a>
             </li>
         </ul>
     </header>
@@ -48,5 +48,13 @@
 </script>
 
 <style lang="scss" scoped>
-
+ul {
+    li a{
+        font-size: 0.8rem;
+        color: grey;
+        font-weight: 500;
+        text-decoration: none;
+        box-shadow: 0, 0, 0, 5px rgb(52, 52, 240);
+    }
+}
 </style>
