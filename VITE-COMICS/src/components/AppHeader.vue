@@ -1,5 +1,6 @@
 <template>
-    <header class="d-flex justify-content-center justify-content-between m-3">
+    <header class="">
+        <div class="container d-flex justify-content-center justify-content-between m-3">
         <img src="../assets/img/dc-logo.png" alt="logoDc">
         <ul class="d-flex gap-4 text-uppercase align-items-center ">
             <li>
@@ -33,6 +34,7 @@
                 <a href="">shop</a>
             </li>
         </ul>
+    </div>
     </header>
 </template>
 
@@ -48,6 +50,7 @@
 </script>
 
 <style lang="scss" scoped>
+
 ul {
     li a{
         font-size: 0.8rem;

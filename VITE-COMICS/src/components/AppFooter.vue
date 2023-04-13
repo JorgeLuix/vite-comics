@@ -1,28 +1,33 @@
 <template>
-    <div class="d-flex justify-content-between bg-footer p-3 ">
+    
+     <FooterComponent/>
+     <div class="bg-footer p-3">
+       <div class=" container d-flex justify-content-between align-items-center">
         <button type="button" 
             class="btn btn-outline text-white text-uppercase rounded-0 border border-3 border-primary">
             sign-up now!
         </button>
-        <ul class="d-flex gap-3">
+    
+    
+        <ul class="d-flex align-items-center gap-3">
             <li><a class="text-primary" href="">follows us</a></li>
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
+            <li><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+            <li><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+            <li><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+            <li><a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+            <li><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
         </ul>
     </div>
+     </div>
+    
 </template>
 
 <script>
+import FooterComponent from './FooterComponent.vue';
     export default {
         name: 'Appfooter',
-        data() {
-            return {
-
-            }
-        }
+        components: { FooterComponent }
+      
     }
 </script>
 
@@ -37,5 +42,8 @@
     }
     .bg-footer{
         background-color: rgb(78, 77, 77);
+    }
+    footer{
+        height: 80px;
     }
 </style>
