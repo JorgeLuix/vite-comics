@@ -3,35 +3,8 @@
         <div class="container d-flex justify-content-center justify-content-between m-3">
         <img src="../assets/img/dc-logo.png" alt="logoDc">
         <ul class="d-flex gap-4 text-uppercase align-items-center ">
-            <li>
-               <a href="">characters</a> 
-            </li>
-            <li>
-               <a href="">comics</a> 
-            </li>
-            <li>
-                <a href="">movies</a>
-            </li>
-            <li>
-                <a href="">tv</a>
-            </li>
-            <li>
-                <a href="">games</a>
-            </li>
-            <li>
-                <a href="">collectibles</a>
-            </li>
-            <li>
-                <a href="">videos</a>
-            </li>
-            <li>
-                <a href="">fans</a>
-            </li>
-            <li>
-                <a href="">news</a>
-            </li>
-            <li>
-                <a href="">shop</a>
+            <li v-for="item in headerItems" :key="item">
+               <a href="#">{{ item }}</a> 
             </li>
         </ul>
     </div>
@@ -43,7 +16,18 @@
         name: 'DcComics',
         data(){
             return{
-                
+                headerItems: [
+                    "Characters",
+                    "Comics",
+                    "Movies",
+                    "Tv",
+                    "Games",
+                    "Collectibles",
+                    "Videos",
+                    "Fans",
+                    "News",
+                    "Shop"
+                ]
             }
         }
     }
@@ -52,12 +36,15 @@
 <style lang="scss" scoped>
 
 ul {
+    li a:hover {
+       padding-bottom: 20px;
+        box-shadow: rgb(21, 21, 245) 0px 1.95px 0px;
+}
     li a{
         font-size: 0.8rem;
         color: grey;
         font-weight: 500;
         text-decoration: none;
-        box-shadow: 0, 0, 0, 5px rgb(52, 52, 240);
     }
 }
 </style>

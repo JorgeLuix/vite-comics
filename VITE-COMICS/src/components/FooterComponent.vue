@@ -1,95 +1,22 @@
 <template>
-    <div class="bg-foot text-white d-flex justify-content-between p-3">
-       <div class="container d-flex">
+    <div class="bg-foot text-white d-flex justify-content-between">
+       <div class="container d-flex pt-5">
         <ul>
-            <li class="text-uppercase fw-bold">dc comics</li>
-            <li>
-               <a href="">Characters</a> 
-            </li>
-            <li>
-               <a href="">Comics</a> 
-            </li>
-            <li>
-                <a href="">Movies</a>
-            </li>
-            <li>
-                <a href="">Tv</a>
-            </li>
-            <li>
-                <a href="">Games</a>
-            </li>
-            <li>
-                <a href="">Collectibles</a>
-            </li>
-            <li>
-                <a href="">Videos</a>
-            </li>
-            <li>
-                <a href="">Fans</a>
-            </li>
-            <li>
-                <a href="">News</a>
-            </li>
-            <li class="text-uppercase fw-bold mt-2">shop</li>
-            <li>
-                <a href="">Shop Dc</a>
-            </li>
-            <li>
-                <a href="">Shop Dc Collectibles</a>
+            <h6 class="text-uppercase fw-bold">dc comics</h6>
+            <li v-for="item in listDcComics" :key="item">
+               <a href="#">{{ item }}</a> 
             </li>
         </ul>
         <ul>
-            <li class="text-uppercase fw-bold">dc</li>
-            <li>
-               <a href="">Terms of Use</a> 
-            </li>
-            <li>
-               <a href="">Privacy policy(New)</a> 
-            </li>
-            <li>
-                <a href="">Ad Choices</a>
-            </li>
-            <li>
-                <a href="">Advertising</a>
-            </li>
-            <li>
-                <a href="">Jobs</a>
-            </li>
-            <li>
-                <a href="">Subscriptions</a>
-            </li>
-            <li>
-                <a href="">Talent Worshops</a>
-            </li>
-            <li>
-                <a href="">CPSC Certificates</a>
-            </li>
-            <li>
-                <a href="">Rating</a>
-            </li>
-            <li>
-                <a href="">Shop Help</a>
-            </li>
-            <li>
-                <a href="">Contact Us</a>
+            <h6 class="text-uppercase fw-bold">dc</h6>
+            <li v-for="item in listDc" :key="item">
+               <a href="#">{{ item }}</a> 
             </li>
         </ul>
         <ul>
-            <li class="text-uppercase fw-bold">sites</li>
-            <li>
-               <a href="">Dc</a> 
-            </li>
-            <li>
-               <a href="">MAD Magazine</a> 
-            </li>
-            <li>
-                <a href="">Dc kids</a>
-            </li>
-            <li>
-                <a href="">Dc Universe</a>
-            </li>
-            <li>
-                <a href="">Dc Power Visa</a>
+            <h6 class="text-uppercase fw-bold">sites</h6>
+            <li v-for="item in sitesList" :key="item">
+               <a href="#">{{ item }}</a> 
             </li>
         </ul>
     </div>
@@ -101,8 +28,20 @@
 </template>
 
 <script>
+import { listDcComics } from '../data/data.js'
+import { listDc } from '../data/data.js'
+import { sitesList } from '../data/data.js'
     export default {
-        
+        name: 'listDcComics',
+        name: 'listDc',
+        name: 'sitesList',
+        data(){
+            return{
+                listDcComics: listDcComics,
+                listDc: listDc,
+                sitesList: sitesList
+            }
+        }
     }
 </script>
 
