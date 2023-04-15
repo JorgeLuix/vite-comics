@@ -48,7 +48,6 @@ import { sitesList } from '../data/data.js'
 <style lang="scss" scoped>
 .bg-foot{
     background-image: url(../assets/img/footer-bg.jpg);
-    
     }
     ul{
         li a{

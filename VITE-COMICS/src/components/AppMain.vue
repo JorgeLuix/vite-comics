@@ -1,10 +1,11 @@
 <template>
     <div class="here">
-       <div class="container">
-          <div class=" p-3">
-            <h4>--- Content goes here ---</h4>
-          </div>
-      </div>
+       <section class="container">
+               <AppJumbotron/>
+            <div class="m-5">
+               <seriesComponent/>
+            </div>
+      </section>
       <div class="bg-primary">
         <div class="container d-flex gap-3 p-3 justify-content-around align-items-cente">
         <span><a href=""><img src="../assets/img/buy-comics-digital-comics.png" alt=""> digital comics</a></span>
@@ -20,16 +21,23 @@
 </template>
 
 <script>
+import AppJumbotron from './AppJumbotron.vue';
+import seriesComponent from './seriesComponent.vue'; 
+
     export default {
     name: "AppMain",
-    
-}
+    components: { AppJumbotron, seriesComponent },
+  }
+
 </script>
 
 <style lang="scss" scoped>
 .here {
     background-color: black;
     color: white;
+}
+.img-jumbotron{
+    object-fit: contain;
 }
 div{
     span {
