@@ -11,6 +11,7 @@
 </script>
 
 <style lang="scss" scoped>
+
 .img-jumbo {
     width: 100%;
 }

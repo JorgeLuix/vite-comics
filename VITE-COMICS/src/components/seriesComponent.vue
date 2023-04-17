@@ -5,7 +5,6 @@
         class="col-12 col-md-6 col-lg-2 mb-4"
          :thumb="card.thumb" :price="card.price" :series="card.series" :type="card.type">
         </cardComponent>
-        
       </div>
     </div>
   </template>

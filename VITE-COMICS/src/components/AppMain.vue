@@ -1,21 +1,22 @@
 <template>
     <div class="here">
-       <section class="container">
-               <AppJumbotron/>
-            <div class="m-5">
-               <seriesComponent/>
-            </div>
-      </section>
+       <div class="height-jumbo">
+            <AppJumbotron/>
+       </div>    
+        <section class="m-5">
+            <seriesComponent/>
+        </section>
+      
       <div class="bg-primary">
         <div class="container d-flex gap-3 p-3 justify-content-around align-items-cente">
-        <span><a href=""><img src="../assets/img/buy-comics-digital-comics.png" alt=""> digital comics</a></span>
-        <span><a href=""><img src="../assets/img/buy-comics-merchandise.png" alt=""> dc merchandise</a></span>
-        <span><a href=""><img src="../assets/img/buy-comics-subscriptions.png" alt=""> subscription</a></span>
-        <span><a href=""><img src="../assets/img/buy-comics-shop-locator.png" alt=""> comic shop locator</a></span>
-        <span><a href="">
-            <img class="" src="../assets/img/buy-dc-power-visa.svg" alt=""> dc power visa
-        </a></span>
-    </div>
+            <span><a href="#"><img src="../assets/img/buy-comics-digital-comics.png" alt=""> digital comics</a></span>
+            <span><a href="#"><img src="../assets/img/buy-comics-merchandise.png" alt=""> dc merchandise</a></span>
+            <span><a href="#"><img src="../assets/img/buy-comics-subscriptions.png" alt=""> subscription</a></span>
+            <span><a href="#"><img src="../assets/img/buy-comics-shop-locator.png" alt=""> comic shop locator</a></span>
+            <span><a href="#">
+                <img class="" src="../assets/img/buy-dc-power-visa.svg" alt=""> dc power visa
+                </a></span>
+       </div>
      </div>
    </div>
 </template>
@@ -36,9 +37,7 @@ import seriesComponent from './seriesComponent.vue';
     background-color: black;
     color: white;
 }
-.img-jumbotron{
-    object-fit: contain;
-}
+
 div{
     span {
         text-transform: uppercase;
